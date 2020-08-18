@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Neravnomerna raspodela</title>
+    <style>
+        .roditelj {
+            border: 1px solid black;
+            width: 800px;
+            height: 200px;
+            display: flex;
+/*            flex-direction: row-reverse;*/
+        }
+        div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 3em;
+        }
+        .box-1 {
+            background: red;
+            flex: 1;
+            order: 0;
+        }
+        .box-2 {
+            background: blue;
+            flex: 1;
+            order: 0;
+        }
+        .box-3 {
+            background: green;
+            flex: 1;
+            order: 0;
+        }
+        .box-4 {
+            background: orange;
+            flex: 1;
+            order: -1;
+        }
+    </style>
+</head>
+<body>
+    
+    <section class="roditelj">
+        <div class="box-1">Box 1</div>
+        <div class="box-2">Box 2</div>
+        <div class="box-3">Box 3</div>
+        <div class="box-4">Box 4</div>
+    </section>
+    
+</body>
+</html>

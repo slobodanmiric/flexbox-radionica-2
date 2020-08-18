@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&family=Yesteryear&display=swap');
+:root {
+    --bodyFont: 'Roboto Condensed', sans-serif;
+    --headingsFont: 'Yesteryear', cursive;
+    --cream: #e5d7cc;
+    --gray: #333;
+    --orange: #dc6805;  /* rgb(220, 104, 5) */
+    --yellow: #f2cd36;  /* rgb(242, 205, 54) */
+    --font: 16px;
+    --white: #fff;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: var(--bodyFont);
+    background: var(--cream);
+    color: var(--gray);
+    line-height: 1.6;
+    font-size: var(--font);
+}
+h1, h2, h3, h4 {
+    font-weight: 300;
+}
+/************************
+header
+************************/
+header {
+    background-image: linear-gradient(to right, rgba(242, 205, 54,.8), rgba(220, 104, 5,.8)), url(header.jpg);
+    height: 80vh;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+}
+header h1 {
+    font-family: var(--headingsFont);
+    font-size: 7rem;
+}
+header span {
+    color: var(--white);
+}
